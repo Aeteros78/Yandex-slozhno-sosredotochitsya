@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png">
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
+    <link rel="stylesheet" href="./styles/globals.css">
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -41,8 +45,9 @@
         </ul>
       </nav>
       <h1 class="header__logo">no focus</h1>
-      <div class="header__text">Что делать, когда не можешь делать ничего
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо</div>
+      <div class="header__text"><p class="header__paragraph title-decor">Что делать, когда не можешь делать ничего<br>
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      </div>
     </header>
     <main class="content">
       <section>
@@ -77,16 +82,16 @@
       </section>
       <section>
         <h2>А можно в картинках?</h2>
-        <img src="./images/sunset.png">
-        <img src="./images/ice-cream.png">
-        <img src="./images/tape.png">
-        <img src="./images/books.png">
-        <img src="./images/street.png">
+        <img src="./images/sunset.png" loading="lazy" class="gallery-grid">
+        <img src="./images/ice-cream.png" loading="lazy" class="gallery-grid">
+        <img src="./images/tape.png" loading="lazy" class="gallery-grid">
+        <img src="./images/books.png" loading="lazy" class="gallery-grid">
+        <img src="./images/street.png" loading="lazy" class="gallery-grid">
       </section>
     </main>
     <script src="./scripts/script.js"></script>
+    <footer class="footer decorated-zone">
+      <h2>focus</h2>
+    </footer>
   </body>
-  <footer class="footer decorated-zone">
-    <h2>focus</h2>
-  </footer>
 </html>
