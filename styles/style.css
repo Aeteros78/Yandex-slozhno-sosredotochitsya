@@ -24,6 +24,7 @@
   min-block-size: 668px;
   padding: 10px;
   block-size: 100vh;
+  margin-block-end: 40px;
 }
 
 .header__rec {
@@ -117,9 +118,26 @@
 
 /* Стили main */
 
+  .content {
+    padding: 10px;
+  }
+
+.content__title {
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-line-height);
+  font-weight: var(--main-font-weight-bold);
+  color: var(--accent-color);
+}
+
 /* Стили галлереи */
 
 .gallery-grid {
   inline-size: 100%;
   block-size: 100%;
+}
+
+/* Стили footer */
+
+.footer {
+  block-size: 100vh;
 }
