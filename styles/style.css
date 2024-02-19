@@ -1,33 +1,37 @@
+/* Общие стили */
+
 .page {
   font-family: var(--main-font-family), monospace;
   line-height: var(--main-font-line-height);
   font-size: var(--main-font-size);
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
-  block-size: 100vh;
+  background-attachment: fixed;
+  
 }
+
+/* Стили header */
 
 .header {
   position: relative;
   background-image: var(--main-bg-image);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   justify-items: end;
   min-block-size: 668px;
   padding: 10px;
+  block-size: 100vh;
 }
 
 .header__rec {
   position: absolute;
   color: var(--accent-color);
-  inset-block-start: 10px;
-  inset-block-end: 38px;
+  inset-block-start: 15px;
+  inset-inline-end: 35px;
   line-height: 25px;
-  
 }
 
 .header__rec::after {
@@ -35,8 +39,8 @@
   position: absolute;
   width: 9px;
   height: 9px;
-  top: 19%;
-  left: 135%;
+  inset-block-end: 8px;
+  inset-inline-end: -15px;
   background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
@@ -65,7 +69,7 @@
 
 .header__theme-menu-button {
   text-transform: lowercase;
-  border: none;
+  border: 1px solid transparent;
   color: var(--nav-color);
   background-color: transparent;
   padding: 0 13px;
@@ -73,22 +77,49 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--nav-color);
+  border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 .header__theme-menu-button:active {
   border: 1px solid var(--nav-color);
+}
+
+.header__theme-menu-button-active {
   pointer-events: none;
 }
 
-.header__theme-menu-button:focus {
-  border: 1px solid var(--nav-color);
-}
-
 .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--nav-color);
   outline: none;
 }
 
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+/* Стили main */
+
+/* Стили галлереи */
+
 .gallery-grid {
   inline-size: 100%;
+  block-size: 100%;
 }
