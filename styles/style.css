@@ -7,7 +7,7 @@
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   background-attachment: fixed;
-  
+  min-width: 375px;
 }
 
 /* Стили header */
@@ -24,10 +24,10 @@
   min-block-size: 668px;
   padding: 10px;
   block-size: 100vh;
-  margin-block-end: 40px;
 }
 
 .header__rec {
+  content: "";
   position: absolute;
   color: var(--accent-color);
   inset-block-start: 15px;
@@ -47,7 +47,8 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
   position: relative;
   color: var(--header-color-logo);
   font-weight: var(--main-font-weight-bold);
@@ -58,14 +59,17 @@
 }
 
 .header__theme-menu-list {
-  list-style: none;
   display: grid;
   gap: 10px;
 }
 
-.title-decor {
+.title-decor,
+.content__subtitle,
+.content__subtitle-recommendations {
   color: var(--main-heading-color);
   background-color: var(--accent-color);
+  font-weight: var(--main-font-weight-bold);
+  margin-block-end: 10px;
 }
 
 .header__theme-menu-button {
@@ -75,23 +79,25 @@
   background-color: transparent;
   padding: 0 13px;
   position: relative;
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: inherit;
+  block-size: 26px;
+  text-align: center;
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.header__theme-menu-button:active {
-  border: 1px solid var(--nav-color);
-}
-
-.header__theme-menu-button-active {
-  pointer-events: none;
-}
-
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--nav-color);
   outline: none;
+}
+
+.header__theme-menu-button-active:disabled {
+  border: 1px solid var(--nav-color);
+  pointer-events: none;
 }
 
 .decorated-zone::before {
@@ -127,17 +133,50 @@
   line-height: var(--main-font-line-height);
   font-weight: var(--main-font-weight-bold);
   color: var(--accent-color);
+  margin-block-end: 20px;
 }
+
+.content__title:first-child {
+  margin-block-start: 40px;
+}
+
+.content__title:not(:first-child) {
+  margin-block-start: 50px;
+} 
+
+.content__subtitle-recommendations {
+  font-weight: inherit;
+  margin-block-start: 20px;
+}
+
+
+.section__why .content__subtitle:last-of-type,
+.section__what .content__subtitle:not(:first-of-type) {
+  margin-block-start: 20px;
+}
+
 
 /* Стили галлереи */
 
 .gallery-grid {
   inline-size: 100%;
   block-size: 100%;
+  
+}
+
+.section__gallery {
+  margin-block-end: 40px;
 }
 
 /* Стили footer */
 
 .footer {
   block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  text-shadow: 2px 2px 0px #FF0070;
 }
