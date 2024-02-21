@@ -136,11 +136,11 @@
   margin-block-end: 20px;
 }
 
-.content__title:first-child {
+.content__title:first-of-type {
   margin-block-start: 35px;
 }
 
-.content__title:not(:first-child) {
+.content__title:not(:first-of-type) {
   margin-block-start: 50px;
 } 
 
@@ -160,7 +160,7 @@
 }
 
 .link-decorated {
-  text-shadow: 0px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
   cursor: pointer;
   outline: none;
