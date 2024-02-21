@@ -24,6 +24,7 @@
   min-block-size: 668px;
   padding: 10px;
   block-size: 100vh;
+  margin-block-end: 30px;
 }
 
 .header__rec {
@@ -69,7 +70,6 @@
   color: var(--main-heading-color);
   background-color: var(--accent-color);
   font-weight: var(--main-font-weight-bold);
-  margin-block-end: 10px;
 }
 
 .header__theme-menu-button {
@@ -133,30 +133,6 @@
   line-height: var(--main-font-line-height);
   font-weight: var(--main-font-weight-bold);
   color: var(--accent-color);
-  margin-block-end: 20px;
-}
-
-.content__title:first-of-type {
-  margin-block-start: 35px;
-}
-
-.content__title:not(:first-of-type) {
-  margin-block-start: 50px;
-} 
-
-.content__subtitle-recommendations {
-  font-weight: inherit;
-  margin-block-start: 20px;
-}
-
-
-.section__why .content__subtitle:last-of-type,
-.section__what .content__subtitle:not(:first-of-type) {
-  margin-block-start: 20px;
-}
-
-.section__gallery .content__subtitle {
-  margin-block-start: 50px;
 }
 
 .link-decorated {
@@ -174,10 +150,51 @@
   outline: 1px solid currentColor;
 }
 
+/* Стили секции почему */
+
+.section__why {
+  display: grid;
+  gap: 20px;
+  margin-block-end: 50px;
+}
+
+.section__why__text-block {
+  display: grid;
+  gap: 10px;
+}
+
+/* Стили секции что */
+
+.section__what {
+  display: grid;
+  gap: 20px;
+  margin-block-end: 50px;
+}
+
+.section__what__text-block {
+  display: grid;
+  gap: 10px;
+}
+
+/* Стили секции как */
+
+.section__how {
+  display: grid;
+  gap: 20px;
+  margin-block-end: 50px;
+}
+
+.section__how__text-block {
+  display: grid;
+  gap: 10px;
+}
+
 /* Стили галлереи */
 
 .section__gallery {
   margin-block-end: 40px;
+  display: grid;
+  gap: 10px;
 }
 
 .section__gallery__grid {
