@@ -9,4 +9,67 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+   /* Переменные текста */
+
+  --main-font-family: 'IBM Plex Mono';
+  --main-font-size: 18px;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
+  --main-font-line-height: 23.4px;
+  --main-font-weight-bold: 700;
+  --main-font-weight-regular: 400;
+
+
+   /* Переменные цвета текста */
+
+  --accent-color: #FF8DCB;
+  --nav-color: #353430;
+  --main-text-color: #353430;
+  --heding-color-text: #353430;
+  --header-color-logo: #FFC2E6;
+  --footer-color-logo: #FFC2E6;
+  --decorated-zone-color: #353430;
+  
+   /* Переменные фона */
+
+  --main-heading-color: #FFF1F7;
+  --main-bg-color: #FFF1F7;
+  --main-bg-image: url(../images/cover-image-light.png);
 }
+
+@media  (prefers-color-scheme:light) {
+  :root {
+    /* Переменные текста */
+
+    --main-font-family: 'IBM Plex Mono';
+    --main-font-size: 18px;
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
+    --main-font-line-height: 23.4px;
+    --main-font-weight-bold: 700;
+    --main-font-weight-regular: 400;
+
+
+   /* Переменные цвета текста */
+
+    --accent-color: #FF8DCB;
+    --nav-color: #353430;
+    --main-text-color: #353430;
+    --heding-color-text: #353430;
+    --header-color-logo: #FFC2E6;
+    --footer-color-logo: #FFC2E6;
+    --decorated-zone-color: #353430;
+  
+   /* Переменные фона */
+
+    --main-heading-color: #FFF1F7;
+    --main-bg-color: #FFF1F7;
+    --main-bg-image: url(../images/cover-image-light.png);
+  }  
+}
+
+.header__rec {
+  display: none;
+}
+

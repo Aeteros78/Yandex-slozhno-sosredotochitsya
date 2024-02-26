@@ -21,13 +21,14 @@
   --accent-color: #FF0070;
   --nav-color: #FF0070;
   --main-text-color: #F1B2CE;
+  --heding-color-text: #000028;
   --header-color-logo: #DB00FF;
   --footer-color-logo: #DB00FF;
+  --decorated-zone-color: #FF0070;
   
   /* Переменные фона */
 
   --main-heading-color: #000028;
   --main-bg-color: #000028;
   --main-bg-image: url(../images/cover-image-dark.png);
-
 }
