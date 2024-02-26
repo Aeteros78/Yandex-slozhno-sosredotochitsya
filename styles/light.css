@@ -49,6 +49,7 @@
     --main-font-line-height: 23.4px;
     --main-font-weight-bold: 700;
     --main-font-weight-regular: 400;
+    --display-rec: none;
 
 
    /* Переменные цвета текста */
@@ -66,10 +67,6 @@
     --main-heading-color: #FFF1F7;
     --main-bg-color: #FFF1F7;
     --main-bg-image: url(../images/cover-image-light.png);
-  }  
-}
-
-.header__rec {
-  display: none;
+  }
 }
 
