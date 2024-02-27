@@ -255,7 +255,7 @@
   }
 
   .section__what .content__title {
-    width: 33%;
+    width: 30%;
   }
 }
 
@@ -271,9 +271,8 @@
 
   .section__what .content__title {
     width: 100%;
-  }  
+  }
 }
-
 
 /* Стили секции как */
 
