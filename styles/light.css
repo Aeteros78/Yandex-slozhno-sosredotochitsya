@@ -26,13 +26,15 @@
   --accent-color: #FF8DCB;
   --nav-color: #353430;
   --main-text-color: #353430;
-  --heding-color-text: #353430;
+  --title-text-color: #000028;
+  --subtitle-text-color: #000028;
   --header-color-logo: #FFC2E6;
   --footer-color-logo: #FFC2E6;
   --decorated-zone-color: #353430;
   
    /* Переменные фона */
 
+  --header-title-bg-color: #FF8DCB;
   --main-heading-color: #FFF1F7;
   --main-bg-color: #FFF1F7;
   --main-bg-image: url(../images/cover-image-light.png);
@@ -54,16 +56,19 @@
 
    /* Переменные цвета текста */
 
-    --accent-color: #FF8DCB;
-    --nav-color: #353430;
-    --main-text-color: #353430;
-    --heding-color-text: #353430;
-    --header-color-logo: #FFC2E6;
-    --footer-color-logo: #FFC2E6;
-    --decorated-zone-color: #353430;
+  --accent-color: #FF8DCB;
+  --nav-color: #353430;
+  --border-color-opacity: rgba(53, 52, 48, 0.4);
+  --main-text-color: #353430;
+  --title-text-color: #000028;
+  --subtitle-text-color: #000028;
+  --header-color-logo: #FFC2E6;
+  --footer-color-logo: #FFC2E6;
+  --decorated-zone-color: #353430;
   
    /* Переменные фона */
 
+    --header-title-bg-color: #FF8DCB;
     --main-heading-color: #FFF1F7;
     --main-bg-color: #FFF1F7;
     --main-bg-image: url(../images/cover-image-light.png);

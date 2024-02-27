@@ -79,13 +79,11 @@
   gap: 10px;
 }
 
-.title-decor,
-.content__subtitle,
-.content__subtitle-recommendations {
-  color: var(--heding-color-text);
-  background-color: var(--accent-color);
-  font-weight: var(--main-font-weight-bold);
+.title-decor {
+  background-color: var(--header-title-bg-color);
+  color: var(--subtitle-text-color);
 }
+
 
 .header__theme-menu-button {
   text-transform: lowercase;
@@ -102,7 +100,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--border-color-opacity);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -164,7 +162,14 @@
   font-size: var(--main-font-size);
   line-height: var(--main-font-line-height);
   font-weight: var(--main-font-weight-bold);
-  color: var(--heding-color-text);
+  color: var(--title-text-color);
+}
+
+.content__subtitle,
+.content__subtitle-recommendations {
+  color: var(--subtitle-text-color);
+  background-color: var(--accent-color);
+  font-weight: var(--main-font-weight-bold);
 }
 
 .content__subtitle-recommendations {
@@ -194,6 +199,18 @@
   margin-block-end: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .section__why {
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-block-end: 80px;
+  }
+
+  .section__why__text-block:last-of-type {
+    grid-column: 2/3;
+  }
+}
+
 .section__why__text-block {
   display: grid;
   gap: 10px;
@@ -212,6 +229,17 @@
   gap: 10px;
 }
 
+@media screen and (min-width: 768px) {
+
+  .section__what {
+    margin-block-end: 80px;
+  }
+
+  .section__what .content__title {
+    width: 30%;
+  }
+}  
+
 /* Стили секции как */
 
 .section__how {
@@ -223,6 +251,27 @@
 .section__how__text-block {
   display: grid;
   gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .section__how {
+    grid-template-columns: 1fr 2fr;
+    margin-block-end: 80px;
+  }
+
+  .section__how .content__title {
+    grid-column: 1/2;
+  }
+
+  .section__how .content__subtitle {
+    grid-column: 2/3;
+    align-self: start;
+  }
+
+  .section__how__text-block {
+    grid-column: 2/3;
+  }
 }
 
 /* Стили галлереи */

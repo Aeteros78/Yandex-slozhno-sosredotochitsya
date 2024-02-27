@@ -27,14 +27,17 @@
 
   --accent-color: #FF0070;
   --nav-color: #FF0070;
+  --border-color-opacity: rgba(255, 0, 112, 0.4);
   --main-text-color: #F1B2CE;
-  --heding-color-text: #000028;
+  --title-text-color: #FF0070;
+  --subtitle-text-color: #000028;
   --header-color-logo: #DB00FF;
   --footer-color-logo: #DB00FF;
   --decorated-zone-color: #FF0070;
   
   /* Переменные фона */
 
+  --header-title-bg-color: #FF0070;
   --main-heading-color: #000028;
   --main-bg-color: #000028;
   --main-bg-image: url(../images/cover-image-dark.png);
