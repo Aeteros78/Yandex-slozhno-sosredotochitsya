@@ -94,6 +94,7 @@
 .title-decor {
   background-color: var(--header-title-bg-color);
   color: var(--subtitle-text-color);
+  font-weight: var(--main-font-weight-bold);
 }
 
 
@@ -186,10 +187,12 @@
   color: var(--subtitle-text-color);
   background-color: var(--accent-color);
   font-weight: var(--main-font-weight-bold);
+  font-size: var(--main-font-size);
 }
 
 .content__subtitle-recommendations {
   font-weight: var(--main-font-weight-regular);
+  margin-block-end: 10px;
 }
 
 .link-decorated {
@@ -275,12 +278,8 @@
   margin-block-end: 50px;
 }
 
-.section__how .content__subtitle{
+.section__how .content__subtitle {
   margin-block-end: 20px;
-}
-
-.content__subtitle-recommendations {
-  margin-block-end: 10px;
 }
 
 @media screen and (min-width: 768px) {
