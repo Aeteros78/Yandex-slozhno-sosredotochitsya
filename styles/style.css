@@ -255,7 +255,7 @@
   }
 
   .section__what .content__title {
-    width: 30%;
+    width: 33%;
   }
 }
 
@@ -268,7 +268,12 @@
     grid-row: 2/3;
     align-self: baseline;
   }
+
+  .section__what .content__title {
+    width: 100%;
+  }  
 }
+
 
 /* Стили секции как */
 
