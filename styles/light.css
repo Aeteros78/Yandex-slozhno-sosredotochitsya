@@ -16,41 +16,6 @@
 
     --main-font-family: 'IBM Plex Mono';
     --main-font-size: 18px;
-    --font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-    --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
-    --main-font-line-height: 23.4px;
-    --main-font-weight-bold: 700;
-    --main-font-weight-regular: 400;
-    --display-rec: none;
-
-
-   /* Переменные цвета текста */
-
-  --accent-color: #FF8DCB;
-  --nav-color: #353430;
-  --border-color-opacity: rgba(53, 52, 48, 0.4);
-  --main-text-color: #353430;
-  --title-text-color: #000028;
-  --subtitle-text-color: #000028;
-  --header-color-logo: #FFC2E6;
-  --footer-color-logo: #FFC2E6;
-  --decorated-zone-color: #353430;
-  
-   /* Переменные фона */
-
-    --header-title-bg-color: #FF8DCB;
-    --main-heading-color: #FFF1F7;
-    --main-bg-color: #FFF1F7;
-    --main-bg-image: url(../images/cover-image-light.png);
-}
-
-@media  (prefers-color-scheme:light) {
-  :root {
-    
-    /* Переменные текста */
-
-    --main-font-family: 'IBM Plex Mono';
-    --main-font-size: 18px;
     --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
     --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
     --main-font-line-height: 23.4px;
@@ -66,6 +31,42 @@
   --border-color-opacity: rgba(53, 52, 48, 0.4);
   --main-text-color: #353430;
   --title-text-color: #000028;
+  --title-shadow-color-desktop: #FF0070;
+  --subtitle-text-color: #000028;
+  --header-color-logo: #FFC2E6;
+  --footer-color-logo: #FFC2E6;
+  --decorated-zone-color: #353430;
+  
+   /* Переменные фона */
+
+    --header-title-bg-color: #FF8DCB;
+    --main-heading-color: #FFF1F7;
+    --main-bg-color: #FFF1F7;
+    --main-bg-image: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    
+    /* Переменные текста */
+
+    --main-font-family: 'IBM Plex Mono';
+    --main-font-size: 18px;
+    --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
+    --main-font-line-height: 23.4px;
+    --main-font-weight-bold: 700;
+    --main-font-weight-regular: 400;
+    --display-rec: none;
+
+   /* Переменные цвета текста */
+
+  --accent-color: #FF8DCB;
+  --nav-color: #353430;
+  --border-color-opacity: rgba(53, 52, 48, 0.4);
+  --main-text-color: #353430;
+  --title-text-color: #000028;
+  --title-shadow-color-desktop: #FF0070;
   --subtitle-text-color: #000028;
   --header-color-logo: #FFC2E6;
   --footer-color-logo: #FFC2E6;
