@@ -298,6 +298,7 @@
 @media screen and (width >= 1024px) {
   .section__what {
     grid-template-columns: repeat(3, 1fr);
+    margin-block-end: 80px;
   }
 
   .section__what__text-block {
