@@ -332,23 +332,23 @@
     gap: 20px;
   }
   
-  .gallery-img:nth-of-type(n+1) {
+  .gallery-grid-img:nth-of-type(n+1) {
     grid-area: sun;
   }
 
-  .gallery-img:nth-of-type(n+2) {
+  .gallery-grid-img:nth-of-type(n+2) {
     grid-area: ice-cream;
   }
   
-  .gallery-img:nth-of-type(n+3) {
+  .gallery-grid-img:nth-of-type(n+3) {
     grid-area: cassette;
   }
 
-  .gallery-img:nth-of-type(n+4) {
+  .gallery-grid-img:nth-of-type(n+4) {
     grid-area: books;
   }
 
-  .gallery-img:nth-of-type(n+5) {
+  .gallery-grid-img:nth-of-type(n+5) {
     grid-area: street;
   }
 
