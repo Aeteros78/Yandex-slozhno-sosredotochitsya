@@ -192,7 +192,6 @@
 
 .content__subtitle-recommendations {
   font-weight: var(--main-font-weight-regular);
-  margin-block-end: 10px;
 }
 
 .link-decorated {
@@ -282,8 +281,15 @@
   margin-block-end: 50px;
 }
 
-.section__how .content__subtitle {
-  margin-block-end: 20px;
+.section_how__article__text_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__how__text-block {
+  display: grid;
+  gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
