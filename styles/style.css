@@ -8,20 +8,20 @@
   background-color: var(--main-bg-color);
   background-attachment: fixed;
   min-width: 375px;
+  background-image: var(--main-bg-image);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Стили header */
 
 .header {
   position: relative;
-  background-image: var(--main-bg-image);
-  background-size: cover;
-  background-position: center;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   justify-items: end;
-  min-block-size: 668px;
   padding: 10px;
   block-size: 100vh;
   margin-block-end: 30px;
