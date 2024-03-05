@@ -350,6 +350,11 @@
   gap: 10px;
 }
 
+.section_gallery__grid_list{
+  display: grid;
+  gap: 10px;
+}
+
 .section_gallery__img {
   inline-size: 100%;
   block-size: 100%;
