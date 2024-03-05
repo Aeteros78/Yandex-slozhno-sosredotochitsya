@@ -9,7 +9,7 @@
   background-attachment: fixed;
   min-width: 375px;
   background-image: var(--main-bg-image);
-  background-size: 100% 100vh;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -84,13 +84,12 @@
   }
 }
 
-.header__logo,
-.footer__logo {
+.logo {
   position: relative;
   color: var(--header-color-logo);
   font-weight: var(--main-font-weight-bold);
-  font-size: var(--title-font-size);
-  line-height: var(--title-font-line-height);
+  font-size: var(--title-font-size-tablet);
+  line-height: var(--title-font-line-height-tablet);
 }
 
 .header__logo {
@@ -107,6 +106,11 @@
 @media screen and (width > 768px) {
   .header__logo {
     text-shadow: 4px 4px 0 var(--title-shadow-color-desktop);
+  }
+
+  .logo {
+    font-size: var(--title-font-size-desktop);
+    line-height: var(--title-font-line-height-desktop);
   }
 }
 
@@ -214,20 +218,14 @@
   }
 }
 
-.section_why__title,
-.section_what__title,
-.section_how__title {
+.section__title {
   font-size: var(--main-font-size);
   line-height: var(--main-font-line-height);
   font-weight: var(--main-font-weight-bold);
   color: var(--title-text-color);
 }
 
-.section_why__subtitle,
-.section_what__subtitle,
-.section_how__subtitle,
-.section_how__subtitle_recommendations,
-.section_gallery__subtitle {
+.section__subtitle {
   color: var(--subtitle-text-color);
   background-color: var(--accent-color);
   font-weight: var(--main-font-weight-bold);
@@ -238,40 +236,36 @@
   font-weight: var(--main-font-weight-regular);
 }
 
-.section_why__text_block__link_decorated,
-.section_how__text_block__link_decorated {
+.section__link {
   text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
   cursor: pointer;
 }
 
-.section_why__text_block__link_decorated:hover,
-.section_how__text_block__link_decorated:hover {
+.section__link:hover {
   border-block-end: 1px solid currentColor;
 }
 
-.section_why__text_block__link_decorated:focus,
-.section_how__text_block__link_decorated:focus {
+.section__link:focus {
   outline: none;
 }
 
-.section_why__text_block__link_decorated:focus-visible,
-.section_how__text_block__link_decorated:focus-visible {
+.section__link:focus-visible {
   outline: 1px solid currentColor;
 }
 
-.section_why,
-.section_what,
-.section_how {
+.sections {
   display: grid;
   gap: 20px;
   margin-block-end: 50px;
 }
 
-.section_why__text_block,
-.section_what__text_block,
-.section_how__text_block,
-.section_gallery__grid_list {
+.section__list__text_block {
+  display: grid;
+  gap: 20px;
+}
+
+.section__text_block {
   display: grid;
   gap: 10px;
 }
@@ -294,7 +288,7 @@
 
 @media screen and (375px < width < 1024px) {
   .section_what {
-    margin-block-end: 70px;
+    margin-block-end: 80px;
   }
 
   .section_what__title {
@@ -304,8 +298,13 @@
 
 @media screen and (width >= 1024px) {
   .section_what {
-    grid-template-columns: repeat(3, 1fr);
     margin-block-end: 80px;
+  }
+
+  .section_what__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
   }
 
   .section_what__text_block {
@@ -346,7 +345,7 @@
 /* Стили галлереи */
 
 .section_gallery {
-  margin-block-end: 20px;
+  margin-block-end: 40px;
   display: grid;
   gap: 10px;
 }
@@ -356,6 +355,7 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 @media screen and (width > 375px) {
@@ -391,10 +391,9 @@
 
   .section_gallery {
     gap: 20px;
-    margin-block-end: 40px;
+    margin-block-end: 60px;
   }
 }
-
 
 /* Стили footer */
 

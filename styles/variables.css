@@ -9,8 +9,10 @@
 
   --main-font-family: 'IBM Plex Mono';
   --main-font-size: 18px;
-  --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  --title-font-line-height: clamp(5.981rem, 4.76rem + 5.213vw, 8.096rem);
+  --title-font-size-tablet: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-font-line-height-tablet: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+  --title-font-line-height-desktop: clamp(6.1875rem, 0.4631rem + 11.9258vw, 8.095625rem);
   --main-font-line-height: 23.4px;
   --main-font-weight-bold: 700;
   --main-font-weight-regular: 400;
